@@ -15,25 +15,15 @@
     </carousel> -->
     <swiper :options="swiperOption">
       <swiper-slide>
-        <img src="../assets/banner-4.jpg" style='height: 100%'>
+        <img src="../assets/banner-1.jpg" style="width: 100%">
           <div class="carousel-caption">
          </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/banner-5.jpg" style='height: 100%'>
-          <div class="carousel-caption">
-         </div>
+        <img src="../assets/banner-2.jpg" style="width: 100%">
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/banner-1.jpg">
-          <div class="carousel-caption">
-         </div>
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../assets/banner-2.jpg">
-      </swiper-slide>
-      <swiper-slide>
-        <img src="../assets/banner-3.jpg">
+        <img src="../assets/banner-3.jpg" style="width: 100%">
       </swiper-slide>
       <div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
     </swiper>
@@ -83,7 +73,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lange='less'>
   .banner{
+    width: 100%;
     margin-bottom: 80px;
+    margin-top: -2px;
+    img {
+      width: 100%;
+    }
   }
   .swiper-pagination-bullet-custom {
     width: 20px!important;

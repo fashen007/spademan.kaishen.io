@@ -1,17 +1,17 @@
 <template>
   <div class="nav">
+    <div class='top-nav'>
+      <a href="/" class="logo" title="广州凯燊展览工程有限公司"></a>
+      <ul class='intro'>
+        <li>您好，欢迎来到广州凯燊展览官方网站</li>
+        <!-- <a href="javascript:;" @click.prevent='addFavorite'>加入收藏</a> |  -->
+        <li>
+          <a class="tel" href="/"></a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-      <a href="/" class="logo" title="金煌装饰"></a>
-      <a href="#" class="place" title="分站"></a>
-      <a class="tel" href="/"></a>
       <ul class="menu">
-        <!-- <li :class="{ active: !path}" v-on:click="navChange('')"><a v-link="{ path: '/' }">首页</a></li>
-        <li :class="{ active: path =='/About' }" v-on:click="navChange('/About')"><a v-link="{ path: '/About' }">关于恒盈</a></li> -->
-        <!-- <li><a v-link="{ path: '/Design' }">设计作品</a></li> -->
-        <!-- <li :class="{ active: path =='/Case' }" v-on:click="navChange('/Case')"><a v-link="{ path: '/Case' }">案例介绍</a></li>
-        <li :class="{ active: path =='/Article' }" v-on:click="navChange('/Article')"><a v-link="{ path: '/Article' }">装修知识</a></li>
-        <li :class="{ active: path =='/Join' }" v-on:click="navChange('/Join')"><a v-link="{ path: '/Join' }">加入我们</a></li> -->
-
         <li :class="{ active: !currentPath}" @click="navChange('')"><router-link to="/">首页</router-link></li>
         <li :class="{ active: currentPath =='/About' }" @click="navChange('/About')"> <router-link to="/About">关于恒盈</router-link></li>
         <!-- <li><a v-link="{ currentPath: '/Design' }">设计作品</a></li> -->
@@ -40,7 +40,21 @@ export default {
     },
     ...mapActions([
       'updateRoutePath'
-    ])
+    ]),
+    addFavorite: function () {
+      let tempsUrl = encodeURI(window.location)
+      let sTitle = document.title
+      let that = this
+      try {
+        window.external.addFavorite(tempsUrl, sTitle)
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, tempsUrl, '')
+        } catch (e) {
+          that.$alert('加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.')
+        }
+      }
+    }
   }
 }
 </script>
@@ -50,52 +64,65 @@ export default {
 .nav{
   border-bottom: 2px solid #fafafa;
   .container {
+    width: 100%;
+    height: 50px;
+    background-color: #999;
+  }
+  .top-nav{
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+    .logo{
+      float: left;
+      width: 245px;
+      height: 70px;
+      background: url(../assets/logo.jpg) no-repeat center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .intro{
+      float: right;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .tel {
+    display: inline-block;
+    width: 233px;
+    height: 20px;
+    background: url(../assets/tel_400.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .menu {
     width: 1200px;
     height: auto;
     margin: 0 auto;
     position: relative;
     clear: both;
-  }
-  .logo{
-    float: left;
-    width: 245px;
-    height: 70px;
-    background: url(../assets/logo.png) no-repeat center;
-    margin-top: 20px;
-  }
-  .tel {
-    display: block;
-    width: 233px;
-    height: 60px;
-    float: right;
-    background: url(../assets/tel_400.png) no-repeat center;
-    margin-top: 20px;
-  }
-  .menu {
-    float: right;
-    margin-top: 30px;
-    margin-right: 20px;
     li {
       float: left;
-      width: 90px;
-      height: 47px;
+      cursor: pointer;
+      width: 150px;
+      height: 50px;
       text-align: center;
-      margin-top: 15px;
+      padding-top: 15px;
       &.active{
+        background-color: #666;
         a {
-          color: #ff3030;
-          }
+          color: #fff;
+        }
       }
       &:hover {
-        color: #ff3030;
-        /*border-bottom: 2px solid #ff3030;*/
+        background-color: #666;
       }
       a {
-        color: #666666;
+        color: #ffffff;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 16px;
         &:hover {
-          color: #ff3030;
+          color: #fff;
         }
       }
       &.sp {
