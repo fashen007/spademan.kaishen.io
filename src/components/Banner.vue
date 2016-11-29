@@ -74,7 +74,7 @@ export default {
 <style lange='less'>
   .banner{
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     margin-top: -2px;
     img {
       width: 100%;

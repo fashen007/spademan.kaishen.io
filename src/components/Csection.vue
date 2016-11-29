@@ -1,5 +1,26 @@
 <template>
   <div class='Csection'>
+    <section class='propaganda'> <!-- 宣传 -->
+      <div class='cont'>
+       <div class='sub-title en'><a href="">OUR ADVANTAGES</a></div> 
+       <div class='sub-title cn'><a href="">我们的优势</a></div> 
+        <p>凯燊将为您贴心打造最合适您品牌形象的展厅，为您打造最实效的营销型展厅</p>
+        <div class="youshi">
+         <div class="youshi fl"><img :src="youShiImg" border="0"></div>
+         <div class="youshiri">
+          <span class="cnbt">要么做到 要么别承诺!</span>
+          <span class="whitex"></span>
+          <span class="enbt">Our commitments we do!</span>
+          <span class="miaoshu">与墨凡合作，您将会得到更成熟的品牌建设服务。我们以客户至上，同时也相互挑战，力求呈现最好的品牌建设成果。</span>
+          <span class="mslb">
+            <i>NO1\项目初步接洽</i><i>NO4\实施施工制作</i> <br>
+            <i>NO2\项目设计阶段</i><i>NO5\跟踪服务</i> <br>
+            <i>NO3\方案合作 设计确认</i><i>NO6\回访服务</i> <br>
+          </span> 
+         </div>
+        </div>
+      </div>
+    </section>
     <section class='case'>
         <div class="title"></div>
         <div class='container'>
@@ -137,6 +158,7 @@ export default {
   data () {
     return {
       caseObj,
+      youShiImg: require('../assets/youshi.jpg'),
       swiperOption: {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -159,6 +181,29 @@ export default {
       height: 60px;
       width: 100%;
       background: url(../assets/title-2.png) no-repeat center;
+    }
+    .propaganda{
+      width: 100%;
+      .cont{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        .sub-title{
+          color: #eee;
+          font-size: 25px;
+          &.en{
+            font-size: 35px;
+          }
+          a{
+            color: #666;
+          }
+        }
+        p{
+          padding: 25px 0;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
     }
     .case{
       margin-bottom: 80px;

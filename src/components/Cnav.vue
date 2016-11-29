@@ -13,10 +13,10 @@
     <div class="container">
       <ul class="menu">
         <li :class="{ active: !currentPath}" @click="navChange('')"><router-link to="/">首页</router-link></li>
-        <li :class="{ active: currentPath =='/About' }" @click="navChange('/About')"> <router-link to="/About">关于恒盈</router-link></li>
+        <li :class="{ active: currentPath =='/About' }" @click="navChange('/About')"> <router-link to="/About">关于凯燊</router-link></li>
         <!-- <li><a v-link="{ currentPath: '/Design' }">设计作品</a></li> -->
-        <li :class="{ active: currentPath =='/Case' || currentPath =='/CaseDetail' }" @click="navChange('/Case')"> <router-link to="/Case">案例介绍</router-link></li>
-        <li :class="{ active: currentPath =='/Article' || currentPath =='/ArticleDetail' }" @click="navChange('/Article')"><router-link to="/Article">装修知识</router-link></li>
+        <li :class="{ active: currentPath =='/Case' || currentPath =='/CaseDetail' }" @click="navChange('/Case')"> <router-link to="/Case">相关案例</router-link></li>
+        <li :class="{ active: currentPath =='/Article' || currentPath =='/ArticleDetail' }" @click="navChange('/Article')"><router-link to="/Article">行业风向  </router-link></li>
         <li :class="{ active: currentPath =='/Join' }" @click="navChange('/Join')"><router-link to="/Join">加入我们</router-link></li>
       </ul>
     </div>
@@ -101,13 +101,14 @@ export default {
     margin: 0 auto;
     position: relative;
     clear: both;
+    text-align: center;
     li {
       float: left;
       cursor: pointer;
       width: 150px;
       height: 50px;
       text-align: center;
-      padding-top: 15px;
+      line-height: 50px;
       &.active{
         background-color: #666;
         a {
@@ -118,6 +119,9 @@ export default {
         background-color: #666;
       }
       a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
         color: #ffffff;
         text-decoration: none;
         font-size: 16px;
