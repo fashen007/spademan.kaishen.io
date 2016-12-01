@@ -1,11 +1,11 @@
 <template>
   <div class="">
     <!-- 多说评论框 start -->
-    <div class='my-duoshuo'>
+    <!-- <div class='my-duoshuo'>
       <h2></h2>
       <span>留下您的联系方式,我们的设计师将第一时间联系您的哦</span>
       <div class="ds-thread" data-thread-key="index" data-title="测试" data-url=""></div>
-    </div>
+    </div> -->
     <!-- 多说评论框 end -->
     <div class="footer">
         <div class="container">

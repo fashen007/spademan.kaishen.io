@@ -2,105 +2,160 @@
   <div class='Csection'>
     <section class='propaganda'> <!-- 宣传 -->
       <div class='cont'>
-       <div class='sub-title en'><a href="">OUR ADVANTAGES</a></div> 
-       <div class='sub-title cn'><a href="">我们的优势</a></div> 
-        <p>凯燊将为您贴心打造最合适您品牌形象的展厅，为您打造最实效的营销型展厅</p>
+        <div class='title'>
+          <div class='sub-title en'><a href="">OUR MISSION</a></div> 
+          <div class='sub-title cn'><a href="">我们的宗旨</a></div> 
+          <p>凯燊将为您贴心打造最合适您品牌形象的展厅，为您打造最实效的营销型展厅</p>
+        </div>
         <div class="youshi">
-         <div class="youshi fl"><img :src="youShiImg" border="0"></div>
-         <div class="youshiri">
-          <span class="cnbt">要么做到 要么别承诺!</span>
-          <span class="whitex"></span>
-          <span class="enbt">Our commitments we do!</span>
-          <span class="miaoshu">与墨凡合作，您将会得到更成熟的品牌建设服务。我们以客户至上，同时也相互挑战，力求呈现最好的品牌建设成果。</span>
-          <span class="mslb">
-            <i>NO1\项目初步接洽</i><i>NO4\实施施工制作</i> <br>
-            <i>NO2\项目设计阶段</i><i>NO5\跟踪服务</i> <br>
-            <i>NO3\方案合作 设计确认</i><i>NO6\回访服务</i> <br>
-          </span> 
-         </div>
+          <div class='wrap'>
+            <div class="fl youshilf"><img :src="youShiImg" border="0"></div>
+            <div class="youshiri">
+            <span class="cnbt">要么做到 要么别承诺!</span>
+            <span class="whitex"></span>
+            <span class="enbt">Our commitments we do!</span>
+            <span class="miaoshu">与凯燊合作，您将会得到更成熟的品牌建设服务。我们以客户至上，同时也相互挑战，力求呈现最好的品牌建设成果。</span>
+            <span class="mslb">
+              <i>NO1\项目初步接洽</i><i>NO4\实施施工制作</i> <br>
+              <i>NO2\项目设计阶段</i><i>NO5\跟踪服务</i> <br>
+              <i>NO3\方案合作 设计确认</i><i>NO6\回访服务</i> <br>
+            </span> 
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class='case'>
-        <div class="title"></div>
-        <div class='container'>
-          <div class="row row-1">
-            <div class="col-md-8 col-lg-8 col-xs-8">
-              <swiper :options="swiperOption">
-                <swiper-slide v-for="(item, index) in caseObj.caseForSlide">
-                  <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
-                    <img v-lazy="item.src">
-                  </a> -->
-                  <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
-                  <img :src="item.src">
-                  <div class="carousel-caption">
-                    {{item.name}}
-                   </div>
-                </swiper-slide>
-                <div class="swiper-pagination" slot="pagination"></div>
-                <div class="swiper-button-prev" slot="button-prev"></div>
-                <div class="swiper-button-next" slot="button-next"></div>
-              </swiper>
-            </div>
-            <div class="col-md-4 case-right case-pic" v-for="item in caseObj.caseForRight">
-              <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
-                <img v-lazy="item.src" alt="">
-              </a> -->
-              <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
-              <img :src="item.src">
-              <div class='inner-title'>{{item.name}}</div>
-              <div class='inner-back'></div>
-            </div>
+      <div class='title'>
+        <div class='sub-title en'><a href="">OUR PROJECTS</a></div> 
+        <div class='sub-title cn'><a href="">我们的项目</a></div> 
+        <p>七年行业经验，博观而约取，厚积而薄发</p>
+      </div>
+      <div class='we-container'>
+        <div class="row row-1">
+          <div class="col-md-8 col-lg-8 col-xs-8">
+            <swiper :options="swiperOption">
+              <swiper-slide v-for="(item, index) in caseObj.caseForSlide">
+                <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
+                  <img v-lazy="item.src">
+                </a> -->
+                <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
+                <img :src="item.src">
+                <div class="carousel-caption">
+                  {{item.name}}
+                 </div>
+              </swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+              <div class="swiper-button-prev" slot="button-prev"></div>
+              <div class="swiper-button-next" slot="button-next"></div>
+            </swiper>
           </div>
-          <div class="row row-2">
-            <div class="col-md-3 col-xs-3 col-lg-3 case-bottom case-pic" v-for="item in caseObj.caseForBottom">
-              <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
-                <img v-lazy="item.src" alt="">
-              </a> -->
-              <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
-              <img :src="item.src">
-              <div class='inner-title'>{{item.name}}</div>
-              <div class='inner-back'></div>
-            </div>
+          <div class="col-md-4 case-right case-pic" v-for="item in caseObj.caseForRight">
+            <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
+              <img v-lazy="item.src" alt="">
+            </a> -->
+            <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
+            <img :src="item.src">
+            <div class='inner-title'>{{item.name}}</div>
+            <div class='inner-back'></div>
           </div>
         </div>
+        <div class="row row-2">
+          <div class="col-md-3 col-xs-3 col-lg-3 case-bottom case-pic" v-for="item in caseObj.caseForBottom">
+            <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}">
+              <img v-lazy="item.src" alt="">
+            </a> -->
+            <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a"></router-link>
+            <img :src="item.src">
+            <div class='inner-title'>{{item.name}}</div>
+            <div class='inner-back'></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="service">
-      <div class="title"></div>
-      <div class="my-container">
-        <div class="animate active">
-          <div class="hline"></div>
-            <ul class="point">
-              <li class="p-1"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-2"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-3"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-4"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-5"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-6"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-7"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-              <li class="p-8"><span class="circle"></span><span class="vline"></span><span class="ico"></span></li>
-            </ul>
-            <ul class="txt">
-              <li class="t-1">1.家装咨询</li>
-              <li class="t-2">2.确认设计师</li>
-              <li class="t-3">3.签订设计协议</li>
-              <li class="t-4">4.设计测量</li>
-              <li class="t-5">5.签订装修合同</li>
-              <li class="t-6">6.施工，生产</li>
-              <li class="t-7">7.验收安装</li>
-              <li class="t-8">8.售后保修</li>
-            </ul>
+    <section class='service_items'>
+      <article class="text_c m_t80">
+        <div class="we-container">
+          <div class="trigger animated fadeInUp" data-animate="fadeInUp">
+            <div class="grid_3 slide">
+              <a href="javascript:;">
+                <p class="p_t40 sort_ico">
+                  <span class="t1"><img :src="serviceObj.t1"></span>
+                  <span class="t2"><img :src="serviceObj.t2"></span>
+                  <span class="t5"><img :src="serviceObj.slideBg"></span>
+                </p>
+                <div class="sort_name p_t20 p_b30 m_b10">
+                  <span class="t3">
+                    <h2 class="f20 fw6">企业展示厅</h2>
+                    <p class="m_t15 p_lr20">企业展厅作为企业展示自身品牌形象的重要场所，已得到众多中大型的青睐，特别是一些注重品牌形象的企业。</p>
+                  </span>
+                  <span class="t4">
+                    <h2 class="f20 fw6">企业展示厅</h2>
+                    <p class="m_t15 p_lr20">企业展厅作为企业展示自身品牌形象的重要场所，已得到众多中大型的青睐，特别是一些注重品牌形象的企业。</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="grid_3 slide">
+              <a href="javascript:;">
+                <p class="p_t40 sort_ico">
+                  <span class="t1"><img :src="serviceObj.t3"></span>
+                  <span class="t2"><img :src="serviceObj.t4"></span>
+                  <span class="t5"><img :src="serviceObj.slideBg"></span>
+                </p>
+                <div class="sort_name p_t20 p_b30 m_b10">
+                  <span class="t3">
+                    <h2 class="f20 fw6">商业会展</h2>
+                    <p class="m_t15 p_lr20">商业会展可以扩大企业知名度，了解行业内最新的咨询，企业参与商业展览，作为商品促销或采购的重要手段。</p>
+                  </span>
+                  <span class="t4">
+                    <h2 class="f20 fw6">商业会展</h2>
+                    <p class="m_t15 p_lr20">商业会展可以扩大企业知名度，了解行业内最新的咨询，企业参与商业展览，作为商品促销或采购的重要手段。</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="grid_3 slide">
+              <a href="javascript:;">
+                <p class="p_t40 sort_ico">
+                  <span class="t1"><img :src="serviceObj.t5"></span>
+                  <span class="t2"><img :src="serviceObj.t6"></span>
+                  <span class="t5"><img :src="serviceObj.slideBg"></span>
+                </p>
+                <div class="sort_name p_t20 p_b30 m_b10">
+                  <span class="t3">
+                    <h2 class="f20 fw6">办公&amp;家居</h2>
+                    <p class="m_t15 p_lr20">办公空间设计的目的是为员工创造一个舒适、方便、卫生、安全、高效的工作环境，以便提高员工的工作效率。</p>
+                  </span>
+                  <span class="t4">
+                    <h2 class="f20 fw6">办公&amp;家居</h2>
+                    <p class="m_t15 p_lr20">办公空间设计的目的是为员工创造一个舒适、方便、卫生、安全、高效的工作环境，以便提高员工的工作效率。</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="grid_3 slide last">
+              <a href="javascript:;">
+              <p class="p_t40 sort_ico">
+                <span class="t1"><img :src="serviceObj.t7"></span>
+                <span class="t2"><img :src="serviceObj.t8"></span>
+                <span class="t5"><img :src="serviceObj.slideBg"></span>
+              </p>
+              <div class="sort_name p_t20 p_b30 m_b10">
+                <span class="t3">
+                  <h2 class="f20 fw6">品牌形象店</h2>
+                  <p class="m_t15 p_lr20">品牌形象反映了品牌的实力与本质，是品牌的根基，所以企业必须十分重视塑造品牌的形象，设计品牌形象店。</p>
+                </span>
+                <span class="t4">
+                  <h2 class="f20 fw6">品牌形象店</h2>
+                  <p class="m_t15 p_lr20">品牌形象反映了品牌的实力与本质，是品牌的根基，所以企业必须十分重视塑造品牌的形象，设计品牌形象店。</p>
+                </span>
+              </div>
+            </a>
+            </div>
+          </div>
         </div>
-        <div class="i_icon">
-          <ul>
-            <li class="icon1">正品保障</li>
-            <li class="icon2">主材厂价直销</li>
-            <li class="icon3">专业检验</li>
-            <li class="icon4">178个全包项目</li>
-            <li class="icon5">1对1专业服务</li>
-          </ul>
-      </div>
-      </div>
+      </article>
     </section>
   </div>
 </template>
@@ -158,6 +213,17 @@ export default {
   data () {
     return {
       caseObj,
+      serviceObj: {
+        t1: require('../assets/service/t1.png'),
+        t2: require('../assets/service/t2.png'),
+        t3: require('../assets/service/t3.png'),
+        t4: require('../assets/service/t4.png'),
+        t5: require('../assets/service/t5.png'),
+        t6: require('../assets/service/t6.png'),
+        t7: require('../assets/service/t7.png'),
+        t8: require('../assets/service/t8.png'),
+        slideBg: require('../assets/service/slide_bg.png')
+      },
       youShiImg: require('../assets/youshi.jpg'),
       swiperOption: {
         pagination: '.swiper-pagination',
@@ -169,6 +235,8 @@ export default {
         lazyLoading: true
       }
     }
+  },
+  methods: {
   }
 }
 </script>
@@ -178,40 +246,51 @@ export default {
   .Csection {
     margin-top: 20px;
     .title{
-      height: 60px;
       width: 100%;
-      background: url(../assets/title-2.png) no-repeat center;
+      text-align: center;
+      margin-top: 50px;
+      .sub-title{
+        color: #eee;
+        font-size: 25px;
+        &.en{
+          font-size: 35px;
+        }
+        a{
+          color: #666;
+        }
+      }
+      p{
+        padding: 25px 0;
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
     .propaganda{
       width: 100%;
       .cont{
-        width: 1200px;
-        margin: 0 auto;
         text-align: center;
-        .sub-title{
-          color: #eee;
-          font-size: 25px;
-          &.en{
-            font-size: 35px;
-          }
-          a{
-            color: #666;
+        .youshi{
+          height: 600px;
+          background-color: #000;
+          width: 100%;
+          .wrap{
+            width: 1050px;
+            margin: 0 auto;
+            padding-top: 100px;
           }
         }
-        p{
-          padding: 25px 0;
-          font-size: 20px;
-          line-height: 30px;
-        }
+        .youshilf{ width:450px; float:left;}
+        .youshiri{ width:520px; float:left; margin-left:80px; font-family:"microsoft yahei"; color:#FFF}
+        .youshiri .cnbt{display:block; font-size:35px;  }
+        .youshiri .whitex{width:200px; height:3px; background:#ec2222; margin:20px auto;display:block;}
+        .youshiri .enbt{ display:block; font-size:32px; text-align:center; text-transform:uppercase; font-family:Century Gothic }
+        .youshiri .miaoshu{display:block; font-size:20px;  margin:40px auto; line-height:40px; }
+        .youshiri .mslb{ line-height:35px;}
+        .youshiri .mslb i{ width:260px; float:left; font-style:normal;}
       }
     }
     .case{
       margin-bottom: 80px;
-      .title{
-        height: 60px;
-        width: 100%;
-        background: url(../assets/title-1.png) no-repeat center;
-      }
       .router-a{
         position: absolute;
         display: inline-block;
@@ -219,7 +298,7 @@ export default {
         width: 680px;
         height: 500px;
       }
-      .container{
+      .we-container{
         width: 1200px;
         margin: 20px auto;
         margin-top: 40px;
@@ -309,81 +388,41 @@ export default {
       font-size: 18px;
       padding: 10px;
     }
-    .service {
-      .title {
-        margin-top: 10px;
-        margin-bottom: 50px;
+    .service_items{
+      width: 1200px;
+      margin: 0 auto;
+      .slide {
+        overflow:hidden;
+        float: left;
+        width: 270px;
+        height: 400px;
+        margin-right: 35px;
+        text-align: center;
+        &.last{
+          margin: 0;
+        }
       }
+      .slide .sort_ico,.slide .sort_name{position:relative; padding-bottom: 40px;}
+      .slide a{display:block; background:#e7e7e7;-webkit-transition:all 0.5s ease 0s;-o-transition:all 0.5s ease 0s;transition:all 0.5s ease 0s}
+      .slide a:hover{background:#c20000; text-decoration: none}
+      .slide .t1{position:relative; margin:0 auto;left:0;display:block; text-align: center; top: 40px}
+      .slide .t2{left:-214px; position: absolute; z-index:5; top: 40px}
+      .slide .t3{position:relative;left:0;}
+      .slide h2{ color:#333;}
+      .slide p{ color:#666;}
+      .slide .t4{position: absolute; z-index:1; width:100%;left:300px; bottom:40px;color:#fff}
+      .slide a .t1,.slide a .t2,.slide .t3,.slide .t4,.slide a .t5,.slide h2{-webkit-transition:all 0.9s ease 0s;-o-transition:all 0.9s ease 0s;transition:all 0.9s ease 0s; opacity:1;z-index:1}
+      .slide a .t2,.slide a .t5{opacity:0}
+      .slide a:hover .t1{opacity:0; left:250px}
+      .slide a:hover .t2{left:50%; margin-left:-62px;opacity:1}
+      .slide a:hover .t3{left:-300px}
+      .slide a:hover h2{color:#fff}
+      .slide a:hover .t3 p,.slide a:hover .t4 p{color:#ffb3bb}
+      .slide a:hover .t4{left:50%; margin-left:-50%}
+      .slide a .t5{position: absolute; left:50%; top:45px; margin-left:-58px;z-index:0}
+      .slide a:hover .t5{opacity:1} 
     }
-    /*无忧售后*/
-    .service{ background:url(../assets/ico4.png) -9999; padding:40px 0 ;padding: 0 25px;}
-    .service .container{ width: 1200px;}
-    .service .animate{ height:172px; position:relative;}
-    .service .hline{ height:3px; background:#ffd4d4; position:relative; top:50%;}
-    .service .txt{ position:absolute; top:82px; height:0; width:100%; text-align:center; font-size:18px; color:#969696;}
-    .service li{ width:12.5%; float:left; position:relative; }
-    .service .t-1,.service .t-3,.service .t-5,.service .t-7{top:-35px;}
-    .service .t-2,.service .t-4,.service .t-6,.service .t-8{bottom:-10px;}
-    .service .point{ position:absolute; width:100%; top:78px;}
-    .service .point .circle{ display:block; width:16px; height:16px; background:url(../assets/ico4.png) no-repeat -227px 0; margin:0 auto;}
-    .service .point .vline{ width:2px; height:21px; background:#fccaca; position:absolute; left:50%; margin-left:-1px;}
-    .service .p-1 .vline,.service .p-3 .vline,.service .p-5 .vline,.service .p-7 .vline{ top:18px;}
-    .service .p-2 .vline,.service .p-4 .vline,.service .p-6 .vline,.service .p-8 .vline{ bottom:18px; transform-origin:bottom center;-webkit-transform-origin:bottom center;}
-    .service .point .ico{ position:absolute; width:51px; height:51px; background:url(../assets/ico4.png) no-repeat; left:50%; margin-left:-25px;}
-    .service .p-1 .ico,.service .p-3 .ico,.service .p-5 .ico,.service .p-7 .ico{ margin-top:23px;}
-    .service .p-2 .ico,.service .p-4 .ico,.service .p-6 .ico,.service .p-8 .ico{ margin-top:-90px;}
-    .service .p-2 .ico{ background-position:-56px 0;}
-    .service .p-3 .ico{ background-position:-112px 0;}
-    .service .p-4 .ico{ background-position:-168px 0;}
-    .service .p-5 .ico{ background-position:0 -56px;}
-    .service .p-6 .ico{ background-position:-56px -56px;}
-    .service .p-7 .ico{ background-position:-112px -56px;}
-    .service .p-8 .ico{ background-position:-168px -56px;}
-    .service .animate.active .vline{animation:vline ease 1s both;}
-    .service .animate.active .ico{ animation:ico 1s both;}
-    .service .animate.active .p-2 .ico,.animate.active .p-2 .vline{ animation-delay:.2s;}
-    .service .animate.active .p-3 .ico,.animate.active .p-3 .vline{ animation-delay:.4s;}
-    .service .animate.active .p-4 .ico,.animate.active .p-4 .vline{ animation-delay:.6s;}
-    .service .animate.active .p-5 .ico,.animate.active .p-5 .vline{ animation-delay:.8s;}
-    .service .animate.active .p-6 .ico,.animate.active .p-6 .vline{ animation-delay:1s;}
-    .service .animate.active .p-7 .ico,.animate.active .p-7 .vline{ animation-delay:1.2s;}
-    .service .animate.active .p-8 .ico,.animate.active .p-8 .vline{ animation-delay:1.4s;}
-
-    @keyframes vline{
-      0%{ height:0;}
-      100%{ height:21px;}
-    }
-    @-webkit-keyframes vline{
-      0%{ height:0;}
-      100%{ height:21px;}
-    }
-    @-webkit-keyframes ico{
-      0%{-webkit-transform:scale(0);}
-      50%{-webkit-transform:scale(1.2);}
-      100%{-webkit-transform:scale(1);}
-    }
-    @keyframes ico{
-      0%{ transform:scale(0);-webkit-transform:scale(0);}
-      50%{transform:scale(1.2);-webkit-transform:scale(1.2);}
-      100%{transform:scale(1);-webkit-transform:scale(1);}
-    }
- /*   .house-show li{ width:234px; height:206px; float:left; margin:30px 3px 0; position:relative;overflow: hidden;}
-    .house-show li p{ position:absolute; left:0; bottom:0; background:#4D4D4D;text-align:center;font-size:14px; width:100%; height:30px; line-height:30px;}
-    .house-show li a{ color:#fff;}*/
-    }
-    .service .i_icon { height: auto; margin-top: 40px; margin-bottom: 80px; cursor: pointer; width: 100%;min-width: 1200px;overflow: hidden;}
-    .service .i_icon ul {width: 1080px; margin: 0 auto;}
-    .service .i_icon ul li { background: url(../assets/icon.png) no-repeat; float: left; width: 198px; height: 165px; color: #666666; text-align: center; padding-top: 123px; border: 1px #efefef solid; }
-    .service .i_icon ul li.icon1 { background-position: 69px 29px; border-right: 0px; }
-    .service .i_icon ul li.icon2 { background-position: 69px -133px; border-right: 0px; }
-    .service .i_icon ul li.icon3 { background-position: 69px -295px; border-right: 0px; }
-    .service .i_icon ul li.icon4 { background-position: 69px -457px; border-right: 0px; }
-    .service .i_icon ul li.icon5 { background-position: 69px -619px; }
-    .service .i_icon ul li.icon1:hover { background-position: -134px 29px; color: #fcb939; }
-    .service .i_icon ul li.icon2:hover { background-position: -134px -133px; color: #fcb939; }
-    .service .i_icon ul li.icon3:hover { background-position: -134px -295px; color: #fcb939; }
-    .service .i_icon ul li.icon4:hover { background-position: -134px -457px; color: #fcb939;}
-    .service .i_icon ul li.icon5:hover { background-position: -134px -619px; color: #fcb939;  }
+  }
 </style>
 <style lang='less'>
   .swiper-slide-active {
