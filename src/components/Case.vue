@@ -2,7 +2,7 @@
   <div class="">
     <div class="join">
       <div class='banner'>
-        <img src="../assets/case/banner.jpg" alt="">
+        <img src="../assets/designCase/banner.jpg" alt="">
       </div>
     </div>
     <div class='case-list'>
