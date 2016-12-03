@@ -27,7 +27,7 @@
             <div class="footer_right">
                 <!-- <img src="/themes/images/weixin.png"> -->
                 <strong>关于我们</strong>
-                <p>凯的企业文化核心内涵是“创造”和“责任”以“正身之德”为已，以“载民之生为任”，企业的价值观：厚德载物，臻于至善...  </p>
+                <p>凯燊企业文化核心内涵是“创造”和“责任”以“正身之德”为已，以“载民之生为任”，企业的价值观：厚德载物，臻于至善...  </p>
                 <a class="qq" href="mqqwpa://im/chat?chat_type=wpa&uin=3396719517"></a>
                 <a class="weibo" href="http://weibo.com/u/2472618664"></a>
             </div>
