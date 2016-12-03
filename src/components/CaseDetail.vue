@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class='banner'>
-      <img src="../assets/case/banner.jpg" alt="">
+      <img src="../assets/designCase/banner.jpg" alt="">
     </div>
     <ul class='content'>
       <li v-for="(item, index) in caseObj">
@@ -18,105 +18,125 @@
 <script>
 var caseObj = [
   {
-    imgs: [require('../assets/case/flxtd/1.jpg'), require('../assets/case/flxtd/2.jpg'), require('../assets/case/flxtd/2.jpg'), require('../assets/case/flxtd/3.jpg'), require('../assets/case/flxtd/4.jpg'), require('../assets/case/flxtd/5.jpg'), require('../assets/case/flxtd/6.jpg'), require('../assets/case/flxtd/7.jpg')],
-    name: '富力新天地梦媛斯汀生物科技',
-    id: 'flxtd',
+    imgs: [require('../assets/designCase/oumaide/1.jpg'), require('../assets/designCase/oumaide/2.jpg'), require('../assets/designCase/oumaide/3.jpg')],
+    name: '欧迈德',
+    id: 'oumaide',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/zhjsw/1.jpg'), require('../assets/case/zhjsw/2.jpg'), require('../assets/case/zhjsw/2.jpg'), require('../assets/case/zhjsw/3.jpg'), require('../assets/case/zhjsw/4.jpg'), require('../assets/case/zhjsw/5.jpg'), require('../assets/case/zhjsw/6.jpg')],
-    name: '中海金沙湾',
-    id: 'zhjsw',
+    imgs: [require('../assets/designCase/angudianqi/1.jpg'), require('../assets/designCase/angudianqi/2.jpg')],
+    name: '安固电器',
+    id: 'angudianqi',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/blklw/1.jpg'), require('../assets/case/blklw/2.jpg'), require('../assets/case/blklw/3.jpg'), require('../assets/case/blklw/4.jpg'), require('../assets/case/blklw/5.jpg'), require('../assets/case/blklw/6.jpg')],
-    name: '保利克洛维',
-    id: 'blklw',
+    imgs: [require('../assets/designCase/ailida/1.jpg')],
+    name: '爱力达',
+    id: 'ailida',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/xpds/1.jpg'), require('../assets/case/xpds/2.jpg'), require('../assets/case/xpds/3.jpg'), require('../assets/case/xpds/4.jpg'), require('../assets/case/xpds/5.jpg'), require('../assets/case/xpds/6.jpg')],
-    name: '兴普大厦',
-    id: 'xpds',
+    imgs: [require('../assets/designCase/baozhi/1.jpg')],
+    name: '宝智',
+    id: 'baozhi',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/gjss/1.jpg'), require('../assets/case/gjss/2.jpg'), require('../assets/case/gjss/3.jpg'), require('../assets/case/gjss/4.jpg'), require('../assets/case/gjss/5.jpg')],
-    name: '国际私塾',
-    id: 'gjss',
+    imgs: [require('../assets/designCase/guyue/1.jpg'), require('../assets/designCase/guyue/2.jpg'), require('../assets/designCase/guyue/3.jpg')],
+    name: '浙江古越',
+    id: 'guyue',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/ddh/1.jpg'), require('../assets/case/ddh/2.jpg'), require('../assets/case/ddh/3.jpg'), require('../assets/case/ddh/4.jpg'), require('../assets/case/ddh/5.jpg'), require('../assets/case/ddh/6.jpg')],
-    name: '大都会',
-    id: 'ddh',
+    imgs: [require('../assets/designCase/hancheng/1.jpg'), require('../assets/designCase/hancheng/2.jpg')],
+    name: '韩城国际街',
+    id: 'hancheng',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/kcxq/1.jpg'), require('../assets/case/kcxq/2.jpg'), require('../assets/case/kcxq/3.jpg'), require('../assets/case/kcxq/4.jpg'), require('../assets/case/kcxq/5.jpg')],
-    name: '客村小区',
-    id: 'kcxq',
+    imgs: [require('../assets/designCase/hengfeng/1.jpg'), require('../assets/designCase/hengfeng/2.jpg'), require('../assets/designCase/hengfeng/3.jpg')],
+    name: '恒丰机械',
+    id: 'hengfeng',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/dhjdgy/1.jpg'), require('../assets/case/dhjdgy/2.jpg'), require('../assets/case/dhjdgy/3.jpg'), require('../assets/case/dhjdgy/4.jpg'), require('../assets/case/dhjdgy/5.jpg'), require('../assets/case/dhjdgy/6.jpg')],
-    name: '敦禾酒店公寓',
-    id: 'dhjdgy',
+    imgs: [require('../assets/designCase/jond/1.jpg')],
+    name: 'jond',
+    id: 'JOND',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/hzwm/1.jpg'), require('../assets/case/hzwm/2.jpg'), require('../assets/case/hzwm/3.jpg'), require('../assets/case/hzwm/4.jpg')],
-    name: '海珠外贸',
-    id: 'hzwm',
+    imgs: [require('../assets/designCase/lifa/1.jpg'), require('../assets/designCase/lifa/2.jpg')],
+    name: '东莞力發',
+    id: 'lifa',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/hzflc/1.jpg'), require('../assets/case/hzflc/2.jpg'), require('../assets/case/hzflc/3.jpg'), require('../assets/case/hzflc/4.jpg')],
-    name: '海珠富力城',
-    id: 'hzflc',
+    imgs: [require('../assets/designCase/longwei/1.jpg'), require('../assets/designCase/longwei/2.jpg'), require('../assets/designCase/longwei/3.jpg')],
+    name: '龙魏水家电',
+    id: 'longwei',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/pzgjcg/1.jpg'), require('../assets/case/pzgjcg/2.jpg'), require('../assets/case/pzgjcg/3.jpg'), require('../assets/case/pzgjcg/4.jpg'), require('../assets/case/pzgjcg/5.jpg')],
-    name: '琶洲国际采购',
-    id: 'pzgjcg',
+    imgs: [require('../assets/designCase/meiguogelan/1.jpg'), require('../assets/designCase/meiguogelan/2.jpg')],
+    name: '美国格朗',
+    id: 'meiguogelan',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/ymkjy/1.jpg'), require('../assets/case/ymkjy/2.jpg'), require('../assets/case/ymkjy/3.jpg'), require('../assets/case/ymkjy/4.jpg'), require('../assets/case/ymkjy/5.jpg')],
-    name: '益民科技园',
-    id: 'ymkjy',
+    imgs: [require('../assets/designCase/mtech/1.jpg')],
+    name: 'Mteach',
+    id: 'mtech',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/lgxq/1.jpg'), require('../assets/case/lgxq/2.jpg'), require('../assets/case/lgxq/3.jpg'), require('../assets/case/lgxq/4.jpg'), require('../assets/case/lgxq/5.jpg')],
-    name: '萝岗小区',
-    id: 'lgxq',
+    imgs: [require('../assets/designCase/nengshi/1.jpg'), require('../assets/designCase/nengshi/2.jpg'), require('../assets/designCase/nengshi/3.jpg'), require('../assets/designCase/nengshi/4.jpg')],
+    name: '能十智能港',
+    id: 'nengshi',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/fcxq/1.jpg'), require('../assets/case/fcxq/2.jpg'), require('../assets/case/fcxq/3.jpg'), require('../assets/case/fcxq/4.jpg')],
-    name: '芳村小区',
-    id: 'fcxq',
+    imgs: [require('../assets/designCase/xinyue/1.jpg')],
+    name: '新月玩具',
+    id: 'xinyue',
     title: '项目名称'
   }, {
-    imgs: [require('../assets/case/blklw/1.jpg'), require('../assets/case/blklw/2.jpg'), require('../assets/case/blklw/3.jpg'), require('../assets/case/blklw/4.jpg')],
-    name: '金山洲',
-    id: 'jsz',
+    imgs: [require('../assets/designCase/oupinjia/1.jpg')],
+    name: '佛山欧品佳',
+    id: 'oupinjia',
     title: '项目名称'
   }, {
     imgs: [require('../assets/designCase/cmkj/1.jpg'), require('../assets/designCase/cmkj/2.jpg')],
     name: '潮漫科技',
     id: 'cmkj',
-    title: '样图案例名称'
+    title: '项目名称'
   }, {
     imgs: [require('../assets/designCase/hetyd/1.jpg'), require('../assets/designCase/hetyd/2.jpg')],
     name: '海尔体验店',
     id: 'hetyd',
-    title: '样图案例名称'
+    title: '项目名称'
   }, {
     imgs: [require('../assets/designCase/lpkj/1.jpg'), require('../assets/designCase/lpkj/2.jpg')],
     name: '利派科技',
     id: 'lpkj',
-    title: '样图案例名称'
+    title: '项目名称'
   }, {
     imgs: [require('../assets/designCase/mskj/1.jpg'), require('../assets/designCase/mskj/2.jpg')],
     name: '美硕科技',
     id: 'mskj',
-    title: '样图案例名称'
+    title: '项目名称'
   }, {
     imgs: [require('../assets/designCase/xph/1.jpg'), require('../assets/designCase/xph/2.jpg')],
     name: '鑫品航电子有限公司',
     id: 'xph',
-    title: '样图案例名称'
+    title: '项目名称'
+  }, {
+    imgs: [require('../assets/designCase/shenshenxiaofang/1.jpg')],
+    name: '神圣消防',
+    id: 'shenshenxiaofang',
+    title: '项目名称'
+  }, {
+    imgs: [require('../assets/designCase/tianzhun/1.jpg')],
+    name: '天准',
+    id: 'tianzhun',
+    title: '项目名称'
+  }, {
+    imgs: [require('../assets/designCase/wenzhousenlin/1.jpg'), require('../assets/designCase/wenzhousenlin/2.jpg')],
+    name: '温州森林食品',
+    id: 'wenzhousenlin',
+    title: '项目名称'
+  }, {
+    imgs: [require('../assets/designCase/wugang/1.jpg')],
+    name: '武钢开圣',
+    id: 'wugang',
+    title: '项目名称'
   }
 ]
 import { mapActions } from 'vuex'

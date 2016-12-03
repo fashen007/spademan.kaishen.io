@@ -2,6 +2,7 @@
   <div class="nav">
     <div class='top-nav'>
       <a href="/" class="logo" title="广州凯燊展览工程有限公司"></a>
+      <img class="logo-right" :src="logoRightImg" alt="广州凯燊展览工程有限公司">
       <ul class='intro'>
         <li>您好，欢迎来到广州凯燊展览官方网站</li>
         <!-- <a href="javascript:;" @click.prevent='addFavorite'>加入收藏</a> |  -->
@@ -16,7 +17,7 @@
         <li :class="{ active: currentPath =='/About' }" @click="navChange('/About')"> <router-link to="/About">关于凯燊</router-link></li>
         <!-- <li><a v-link="{ currentPath: '/Design' }">设计作品</a></li> -->
         <li :class="{ active: currentPath =='/Case' || currentPath =='/CaseDetail' }" @click="navChange('/Case')"> <router-link to="/Case">相关案例</router-link></li>
-        <li :class="{ active: currentPath =='/Article' || currentPath =='/ArticleDetail' }" @click="navChange('/Article')"><router-link to="/Article">行业风向  </router-link></li>
+        <li :class="{ active: currentPath =='/Article' || currentPath =='/ArticleDetail' }" @click="navChange('/Article')"><router-link to="/Article">行业知识</router-link></li>
         <li :class="{ active: currentPath =='/Join' }" @click="navChange('/Join')"><router-link to="/Join">加入我们</router-link></li>
       </ul>
     </div>
@@ -26,6 +27,11 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 export default {
+  data () {
+    return {
+      logoRightImg: require('../assets/right-logo.png')
+    }
+  },
   computed: {
     ...mapState({
       currentPath: state => {
@@ -71,6 +77,7 @@ export default {
   .top-nav{
     width: 1100px;
     margin: 0 auto;
+    height: 100px;
     padding-top: 20px;
     overflow: hidden;
     .logo{
@@ -80,6 +87,9 @@ export default {
       background: url(../assets/logo.jpg) no-repeat center;
       -webkit-background-size: contain;
       background-size: contain;
+    }
+    .logo-right{
+      height: 100%;
     }
     .intro{
       float: right;

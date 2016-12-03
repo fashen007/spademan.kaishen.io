@@ -6,18 +6,6 @@
       </div>
     </div>
     <div class='case-list'>
-      <h3 style='text-align: left'>项目案例</h3>
-      <ul id='grid' v-masonry="{ columnWidth: 200 }">
-        <li v-for="(item, index) in caseObj" class='grid-item'>
-          <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a">
-          <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}"> -->
-           <img v-lazy="item.src" alt="">
-           <div class='bg'></div>
-           <div class='title'>{{item.name}}</div>
-          <!-- </a>   -->
-          </router-link>
-        </li>
-      </ul>
       <h3 style='text-align: left'>设计案例样图</h3>
        <ul id='grid' v-masonry="{ columnWidth: 200 }">
         <li v-for="(item, index) in designCaseObj" class='grid-item'>
@@ -30,6 +18,18 @@
           </router-link>
         </li>
       </ul>
+      <h3 style='text-align: left'>项目案例</h3>
+      <ul id='grid' v-masonry="{ columnWidth: 200 }">
+        <li v-for="(item, index) in caseObj" class='grid-item'>
+          <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a">
+          <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}"> -->
+           <img v-lazy="item.src" alt="">
+           <div class='bg'></div>
+           <div class='title'>{{item.name}}</div>
+          <!-- </a>   -->
+          </router-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -37,61 +37,86 @@
 <script>
   var caseObj = [
     {
-      src: require('../assets/case/flxtd/1.jpg'),
-      name: '富力新天地梦媛斯汀生物科技',
-      id: 'flxtd'
+      src: require('../assets/designCase/oumaide/1.jpg'),
+      name: '欧迈德',
+      id: 'oumaide'
+    },
+    {
+      src: require('../assets/designCase/angudianqi/1.jpg'),
+      name: '安固电器',
+      id: 'angudianqi'
     }, {
-      src: require('../assets/case/zhjsw/1.jpg'),
-      name: '中海金沙湾',
-      id: 'zhjsw'
+      src: require('../assets/designCase/ailida/1.jpg'),
+      name: '爱力达',
+      id: 'ailida'
     }, {
-      src: require('../assets/case/xpds/1.jpg'),
-      name: '兴普大厦',
-      id: 'xpds'
+      src: require('../assets/designCase/baozhi/1.jpg'),
+      name: '宝智',
+      id: 'baozhi'
     }, {
-      src: require('../assets/case/gjss/1.jpg'),
-      name: '国际私塾',
-      id: 'gjss'
+      src: require('../assets/designCase/guyue/1.jpg'),
+      name: '浙江古越',
+      id: 'guyue'
     }, {
-      src: require('../assets/case/ddh/1.jpg'),
-      name: '大都会',
-      id: 'ddh'
+      src: require('../assets/designCase/hancheng/1.jpg'),
+      name: '韩城国际街',
+      id: 'hancheng'
     }, {
-      src: require('../assets/case/kcxq/1.jpg'),
-      name: '客村小区',
-      id: 'kcxq'
+      src: require('../assets/designCase/hengfeng/1.jpg'),
+      name: '恒丰机械',
+      id: 'hengfeng'
     }, {
-      src: require('../assets/case/dhjdgy/1.jpg'),
-      name: '敦禾酒店公寓',
-      id: 'dhjdgy'
+      src: require('../assets/designCase/jond/1.jpg'),
+      name: 'JOND',
+      id: 'jond'
     }, {
-      src: require('../assets/case/hzwm/1.jpg'),
-      name: '海珠外贸',
-      id: 'hzwm'
+      src: require('../assets/designCase/lifa/1.jpg'),
+      name: '东莞力發',
+      id: 'lifa'
     }, {
-      src: require('../assets/case/hzflc/1.jpg'),
-      name: '海珠富力城',
-      id: 'hzflc'
+      src: require('../assets/designCase/longwei/1.jpg'),
+      name: '龙魏水家电',
+      id: 'longwei'
     }, {
-      src: require('../assets/case/pzgjcg/1.jpg'),
-      name: '琶洲国际采购',
-      id: 'pzgjcg'
+      src: require('../assets/designCase/meiguogelan/1.jpg'),
+      name: '美国格朗',
+      id: 'meiguogelan'
     }, {
-      src: require('../assets/case/ymkjy/1.jpg'),
-      name: '益民科技园',
-      id: 'ymkjy'
+      src: require('../assets/designCase/mtech/1.jpg'),
+      name: 'Mteach',
+      id: 'mtech'
     }, {
-      src: require('../assets/case/lgxq/1.jpg'),
-      name: '萝岗小区',
-      id: 'lgxq'
+      src: require('../assets/designCase/nengshi/1.jpg'),
+      name: '能十智能港',
+      id: 'nengshi'
     }, {
-      src: require('../assets/case/fcxq/1.jpg'),
-      name: '芳村小区',
-      id: 'fcxq'
+      src: require('../assets/designCase/xinyue/1.jpg'),
+      name: '新月玩具',
+      id: 'xinyue'
     }, {
-      src: require('../assets/case/jsz/1.jpg'),
-      name: '金山洲',
-      id: 'jsz'
+      src: require('../assets/designCase/oupinjia/1.jpg'),
+      name: '佛山欧品佳',
+      id: 'oupinjia'
+    }, {
+      src: require('../assets/designCase/shenshenxiaofang/1.jpg'),
+      name: '神圣消防',
+      id: 'shenshenxiaofang'
+    }, {
+      src: require('../assets/designCase/chishon/1.jpg'),
+      name: 'CHISHON',
+      id: 'chishon'
+    }, {
+      src: require('../assets/designCase/tianzhun/1.jpg'),
+      name: '天准',
+      id: 'tianzhun'
+    }, {
+      src: require('../assets/designCase/wenzhousenlin/1.jpg'),
+      name: '温州森林食品',
+      id: 'wenzhousenlin'
+    }, {
+      src: require('../assets/designCase/wugang/1.jpg'),
+      name: '武钢开圣',
+      id: 'wugang'
     }
   ]
   var designCaseObj = [{

@@ -3,7 +3,7 @@
     <div class="article">
       <div class='banner'>
         <span class='title'>
-          恒盈课堂
+          行业知识
         </span>
         <img src="../assets/article/banner.jpg" alt="">
       </div>

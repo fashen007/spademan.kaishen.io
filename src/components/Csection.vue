@@ -3,8 +3,8 @@
     <section class='propaganda'> <!-- 宣传 -->
       <div class='cont'>
         <div class='title'>
-          <div class='sub-title en'><a href="">OUR MISSION</a></div> 
-          <div class='sub-title cn'><a href="">我们的宗旨</a></div> 
+          <div class='sub-title en'><a href="">OUR MISSION</a></div>
+          <div class='sub-title cn'><a href="">我们的宗旨</a></div>
           <p>凯燊将为您贴心打造最合适您品牌形象的展厅，为您打造最实效的营销型展厅</p>
         </div>
         <div class="youshi">
@@ -19,7 +19,7 @@
               <i>NO1\项目初步接洽</i><i>NO4\实施施工制作</i> <br>
               <i>NO2\项目设计阶段</i><i>NO5\跟踪服务</i> <br>
               <i>NO3\方案合作 设计确认</i><i>NO6\回访服务</i> <br>
-            </span> 
+            </span>
             </div>
           </div>
         </div>
@@ -27,8 +27,8 @@
     </section>
     <section class='case'>
       <div class='title'>
-        <div class='sub-title en'><a href="">OUR PROJECTS</a></div> 
-        <div class='sub-title cn'><a href="">我们的项目</a></div> 
+        <div class='sub-title en'><a href="">OUR PROJECTS</a></div>
+        <div class='sub-title cn'><a href="">我们的项目</a></div>
         <p>七年行业经验，博观而约取，厚积而薄发</p>
       </div>
       <div class='we-container'>
@@ -166,41 +166,41 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 const caseObj = {
   caseForSlide: [
     {
-      src: require('../assets/case/flxtd/7.jpg'),
-      name: '富力新天地梦媛斯汀生物科技',
-      id: 'flxtd'
+      src: require('../assets/designCase/wenzhousenlin/1.jpg'),
+      name: '温州森林食品',
+      id: 'wenzhousenlin'
     }, {
-      src: require('../assets/case/zhjsw/1.jpg'),
-      name: '中海金沙湾',
-      id: 'zhjsw'
+      src: require('../assets/designCase/oumaide/1.jpg'),
+      name: '欧迈德',
+      id: 'oumaide'
     }, {
-      src: require('../assets/case/xpds/3.jpg'),
-      name: '兴普大厦',
-      id: 'xpds'
+      src: require('../assets/designCase/longwei/1.jpg'),
+      name: '龙魏',
+      id: 'longwei'
     }
   ],
   caseForRight: [{
-    src: require('../assets/case/gjss/1.jpg'),
-    name: '国际私塾',
-    id: 'gjss'
+    src: require('../assets/designCase/hengfeng/1.jpg'),
+    name: '恒丰机械',
+    id: 'hengfeng'
   }],
   caseForBottom: [
     {
-      src: require('../assets/case/hzwm/1.jpg'),
-      name: '海珠外贸',
-      id: 'hzwm'
+      src: require('../assets/designCase/nengshi/1.jpg'),
+      name: '能十职能',
+      id: 'nengshi'
     }, {
-      src: require('../assets/case/pzgjcg/1.jpg'),
-      name: '琶洲国际采购',
-      id: 'pzgjcg'
+      src: require('../assets/designCase/cmkj/1.jpg'),
+      name: '潮漫数码科技',
+      id: 'cmkj'
     }, {
-      src: require('../assets/case/ddh/1.jpg'),
-      name: '大都会',
-      id: 'ddh'
+      src: require('../assets/designCase/hetyd/1.jpg'),
+      name: '海尔体验店',
+      id: 'hetyd'
     }, {
-      src: require('../assets/case/jsz/1.jpg'),
-      name: '金沙洲',
-      id: 'jsz'
+      src: require('../assets/designCase/mskj/1.jpg'),
+      name: '美硕科技',
+      id: 'mskj'
     }
   ]
 }
@@ -420,7 +420,7 @@ export default {
       .slide a:hover .t3 p,.slide a:hover .t4 p{color:#ffb3bb}
       .slide a:hover .t4{left:50%; margin-left:-50%}
       .slide a .t5{position: absolute; left:50%; top:45px; margin-left:-58px;z-index:0}
-      .slide a:hover .t5{opacity:1} 
+      .slide a:hover .t5{opacity:1}
     }
   }
 </style>

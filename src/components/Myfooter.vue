@@ -15,10 +15,10 @@
             </div>
             <div class="footer_middle">
                 <strong>快速导航</strong>
-                  <a @click.prevent="navChange('/About')">关于恒盈</a>
+                  <a @click.prevent="navChange('/About')">关于凯燊</a>
                   <a @click.prevent="navChange('/Join')">加入我们</a>
                   <a @click.prevent="navChange('/Case')">案例介绍</a>
-                  <a @click.prevent="navChange('/Article')">装修知识</a>
+                  <a @click.prevent="navChange('/Article')">行业知识</a>
                   <!-- <router-link to="/About" @click="navChange('/About')">关于恒盈</router-link>
                   <router-link to="/Join" @click="navChange('/Join')">加入我们</router-link>
                   <router-link to="/Case" @click="navChange('/Case')">案例介绍</router-link>
@@ -27,7 +27,7 @@
             <div class="footer_right">
                 <!-- <img src="/themes/images/weixin.png"> -->
                 <strong>关于我们</strong>
-                <p>恒盈的企业文化核心内涵是“创造”和“责任”以“正身之德”为已，以“载民之生为任”，企业的价值观：厚德载物，臻于至善...  </p>
+                <p>凯的企业文化核心内涵是“创造”和“责任”以“正身之德”为已，以“载民之生为任”，企业的价值观：厚德载物，臻于至善...  </p>
                 <a class="qq" href="mqqwpa://im/chat?chat_type=wpa&uin=3396719517"></a>
                 <a class="weibo" href="http://weibo.com/u/2472618664"></a>
             </div>
