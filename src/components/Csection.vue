@@ -3,8 +3,8 @@
     <section class='propaganda'> <!-- 宣传 -->
       <div class='cont'>
         <div class='title'>
-          <div class='sub-title en'><a href="">OUR MISSION</a></div>
-          <div class='sub-title cn'><a href="">我们的宗旨</a></div>
+          <div class='sub-title en'><a herf='javascript:;' @click.prevent="navChange('/About')">OUR MISSION</a></div>
+          <div class='sub-title cn'><a herf='javascript:;' @click.prevent="navChange('/About')">我们的宗旨</a></div>
           <p>凯燊将为您贴心打造最合适您品牌形象的展厅，为您打造最实效的营销型展厅</p>
         </div>
         <div class="youshi">
@@ -27,8 +27,8 @@
     </section>
     <section class='case'>
       <div class='title'>
-        <div class='sub-title en'><a href="">OUR PROJECTS</a></div>
-        <div class='sub-title cn'><a href="">我们的项目</a></div>
+        <div class='sub-title en'><a href="javascript:;" @click.prevent="navChange('/About')">OUR PROJECTS</a></div>
+        <div class='sub-title cn'><a  href="javascript:;" @click.prevent="navChange('/About')">我们的项目</a></div>
         <p>七年行业经验，博观而约取，厚积而薄发</p>
       </div>
       <div class='we-container'>
@@ -159,9 +159,8 @@
     </section>
   </div>
 </template>
-
 <script>
-// import { carousel, slider } from 'vue-strap'
+import { mapActions } from 'vuex'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 const caseObj = {
   caseForSlide: [
@@ -204,7 +203,6 @@ const caseObj = {
     }
   ]
 }
-
 export default {
   components: {
     swiper,
@@ -237,6 +235,13 @@ export default {
     }
   },
   methods: {
+    navChange: function (path) {
+      this.updateRoutePath(path)
+      this.$router.push(path)
+    },
+    ...mapActions([
+      'updateRoutePath'
+    ])
   }
 }
 </script>
@@ -252,6 +257,7 @@ export default {
       .sub-title{
         color: #eee;
         font-size: 25px;
+        cursor: pointer;
         &.en{
           font-size: 35px;
         }
