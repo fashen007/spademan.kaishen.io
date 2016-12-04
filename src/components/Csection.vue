@@ -74,6 +74,11 @@
       </div>
     </section>
     <section class='service_items'>
+      <div class='title'>
+          <div class='sub-title en'><a herf='javascript:;' @click.prevent="navChange('/About')">OUR BUSINESSES</a></div>
+          <div class='sub-title cn'><a herf='javascript:;' @click.prevent="navChange('/About')">我们的业务范围</a></div>
+          <p>凯燊专业从事展览设计、展台搭建、展厅策划设计及工程制作</p>
+        </div>
       <article class="text_c m_t80">
         <div class="we-container">
           <div class="trigger animated fadeInUp" data-animate="fadeInUp">
