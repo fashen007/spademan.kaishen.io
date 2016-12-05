@@ -55,6 +55,7 @@ export default {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    height: 216px;
     img{
       width: 100%;
     }

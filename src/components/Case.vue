@@ -162,7 +162,8 @@
     margin: 0 auto;
     position: relative;
     img{
-      width: 100%;
+      width: 1920px;
+      height: 216px;
     }
   }
   .case-list{
