@@ -194,17 +194,17 @@ const caseObj = {
       name: '能十职能',
       id: 'nengshi'
     }, {
-      src: require('../assets/designCase/cmkj/1.jpg'),
-      name: '潮漫数码科技',
-      id: 'cmkj'
+      src: require('../assets/designCase/guyue/1.jpg'),
+      name: '浙江古越',
+      id: 'guyue'
     }, {
-      src: require('../assets/designCase/hetyd/1.jpg'),
-      name: '海尔体验店',
-      id: 'hetyd'
+      src: require('../assets/designCase/hancheng/1.jpg'),
+      name: '韩城国际街',
+      id: 'hancheng'
     }, {
-      src: require('../assets/designCase/mskj/1.jpg'),
-      name: '美硕科技',
-      id: 'mskj'
+      src: require('../assets/designCase/lifa/1.jpg'),
+      name: '东莞力發',
+      id: 'lifa'
     }
   ]
 }
