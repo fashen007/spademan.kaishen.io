@@ -92,32 +92,34 @@ var caseObj = [
     name: '佛山欧品佳',
     id: 'oupinjia',
     title: '项目名称'
-  }, {
-    imgs: [require('../assets/designCase/cmkj/1.jpg'), require('../assets/designCase/cmkj/2.jpg')],
-    name: '潮漫科技',
-    id: 'cmkj',
-    title: '项目名称'
-  }, {
-    imgs: [require('../assets/designCase/hetyd/1.jpg'), require('../assets/designCase/hetyd/2.jpg')],
-    name: '海尔体验店',
-    id: 'hetyd',
-    title: '项目名称'
-  }, {
-    imgs: [require('../assets/designCase/lpkj/1.jpg'), require('../assets/designCase/lpkj/2.jpg')],
-    name: '利派科技',
-    id: 'lpkj',
-    title: '项目名称'
-  }, {
-    imgs: [require('../assets/designCase/mskj/1.jpg'), require('../assets/designCase/mskj/2.jpg')],
-    name: '美硕科技',
-    id: 'mskj',
-    title: '项目名称'
-  }, {
-    imgs: [require('../assets/designCase/xph/1.jpg'), require('../assets/designCase/xph/2.jpg')],
-    name: '鑫品航电子有限公司',
-    id: 'xph',
-    title: '项目名称'
-  }, {
+  },
+  // }, {
+  //   imgs: [require('../assets/designCase/cmkj/1.jpg'), require('../assets/designCase/cmkj/2.jpg')],
+  //   name: '潮漫科技',
+  //   id: 'cmkj',
+  //   title: '项目名称'
+  // }, {
+  //   imgs: [require('../assets/designCase/hetyd/1.jpg'), require('../assets/designCase/hetyd/2.jpg')],
+  //   name: '海尔体验店',
+  //   id: 'hetyd',
+  //   title: '项目名称'
+  // }, {
+  //   imgs: [require('../assets/designCase/lpkj/1.jpg'), require('../assets/designCase/lpkj/2.jpg')],
+  //   name: '利派科技',
+  //   id: 'lpkj',
+  //   title: '项目名称'
+  // }, {
+  //   imgs: [require('../assets/designCase/mskj/1.jpg'), require('../assets/designCase/mskj/2.jpg')],
+  //   name: '美硕科技',
+  //   id: 'mskj',
+  //   title: '项目名称'
+  // }, {
+  //   imgs: [require('../assets/designCase/xph/1.jpg'), require('../assets/designCase/xph/2.jpg')],
+  //   name: '鑫品航电子有限公司',
+  //   id: 'xph',
+  //   title: '项目名称'
+  // }, {
+  {
     imgs: [require('../assets/designCase/shenshenxiaofang/1.jpg')],
     name: '神圣消防',
     id: 'shenshenxiaofang',
