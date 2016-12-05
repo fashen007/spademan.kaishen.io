@@ -29,7 +29,7 @@ import { mapState, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      logoRightImg: require('../assets/right-logo.png')
+      logoRightImg: require('../assets/logo-right.png')
     }
   },
   computed: {
