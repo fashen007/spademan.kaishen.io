@@ -6,18 +6,16 @@
       </div>
     </div>
     <div class='case-list'>
-      <h3 style='text-align: left'>设计案例样图</h3>
+      <!-- <h3 style='text-align: left'>设计案例样图</h3>
        <ul id='grid' v-masonry="{ columnWidth: 200 }">
         <li v-for="(item, index) in designCaseObj" class='grid-item'>
-          <!-- <a v-link="{ name: 'CaseDetail', params: { caseId: item.id }}"> -->
           <router-link :to="{path: `/CaseDetail/${item.id}`}" class="router-a">
            <img v-lazy="item.src" alt="">
            <div class='bg'></div>
            <div class='title'>{{item.name}}</div>
-          <!-- </a> -->
           </router-link>
         </li>
-      </ul>
+      </ul> -->
       <h3 style='text-align: left'>项目案例</h3>
       <ul id='grid' v-masonry="{ columnWidth: 200 }">
         <li v-for="(item, index) in caseObj" class='grid-item'>
@@ -162,8 +160,7 @@
     margin: 0 auto;
     position: relative;
     img{
-      width: 1920px;
-      height: 216px;
+      width: 100%;
     }
   }
   .case-list{

@@ -1,29 +1,16 @@
 <template>
   <div class='banner'>
-    <!-- <carousel>
-      <slider>
-        <img src="../assets/banner-1.jpg">
-          <div class="carousel-caption">
-         </div>
-      </slider>
-      <slider>
-        <img src="../assets/banner-2.jpg">
-      </slider>
-      <slider>
-        <img src="../assets/banner-3.jpg">
-      </slider>
-    </carousel> -->
     <swiper :options="swiperOption">
       <swiper-slide>
-        <img src="../assets/banner-1.jpg" style="width: 100%">
+        <img :src="img1" style="width: 100%">
           <div class="carousel-caption">
          </div>
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/banner-2.jpg" style="width: 100%">
+        <img :src="img2" style="width: 100%">
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/banner-3.jpg" style="width: 100%">
+        <img :src="img3" style="width: 100%">
       </swiper-slide>
       <div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
     </swiper>
@@ -39,6 +26,9 @@ export default {
   },
   data () {
     return {
+      img1: require('../assets/banner-1.jpg'),
+      img2: require('../assets/banner-2.jpg'),
+      img3: require('../assets/banner-3.jpg'),
       swiperOption: {
         name: 'currentSwiper',
         autoplay: 3000,
@@ -76,10 +66,14 @@ export default {
     width: 100%;
     margin-bottom: 10px;
     margin-top: -2px;
+    overflow: hidden;
     img {
       width: 100%;
     }
   }
+  /*img[lazy='loading']{
+    display: none;
+  }*/
   .swiper-pagination-bullet-custom {
     width: 20px!important;
     height: 20px!important;
