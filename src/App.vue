@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='main-cont'>
     <cnav></cnav>
     <transition><router-view></router-view></transition>
     <myfooter></myfooter>
@@ -46,7 +46,9 @@ ul{
 #app a {
   text-decoration: none;
 }
-
+.main-cont{
+  overflow: hidden;
+}
 .logo {
   width: 100px;
   height: 100px
