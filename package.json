@@ -19,7 +19,8 @@
     "vue-awesome-swiper": "^2.2.0",
     "vue-lazyload": "^0.8.0",
     "vue-router": "^2.0.3",
-    "vuex": "^2.0.0"
+    "vuex": "^2.0.0",
+    "webpack-manifest-plugin": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
