@@ -74,6 +74,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
+    }),
+    // 
+    new ManifestPlugin({
+      fileName: 'app.appcache',
+      basePath: '/'
     })
   ]
 })
