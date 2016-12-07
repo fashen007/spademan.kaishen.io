@@ -77,8 +77,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // 
     new ManifestPlugin({
-      fileName: 'app.appcache',
-      basePath: '/'
+      fileName: 'app.appcache'
     })
   ]
 })
