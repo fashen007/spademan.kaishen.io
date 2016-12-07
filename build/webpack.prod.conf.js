@@ -6,7 +6,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var ManifestPlugin = require('webpack-manifest-plugin');
+var ManifestPlugin = require('manifest-webpack-plugin');
 var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -75,11 +75,18 @@ var webpackConfig = merge(baseWebpackConfig, {
       name: 'manifest',
       chunks: ['vendor']
     }),
+    new ManifestPlugin(path.join('dist', 'manifest.json'))
     // 
-    new ManifestPlugin({
-      fileName: 'app.appcache',
-      headcomment: "v" + new Date().getTime()
-    })
+    // new ManifestPlugin({
+    //   fileName: 'app',
+    //   cache: [
+    //     'js/[contenthash].js', 
+    //     'css/[contenthash].css',
+    //   ],
+    //   timestamp: true,
+    //   headcomment: "v" + new Date().getTime(),
+    //   master: ['index.html']
+    // }),
   ]
 })
 
