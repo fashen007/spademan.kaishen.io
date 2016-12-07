@@ -7,6 +7,7 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ManifestPlugin = require('webpack-manifest-plugin');
+var pkg = require('../package');
 var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -77,7 +78,8 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // 
     new ManifestPlugin({
-      fileName: 'app.appcache'
+      fileName: 'app.appcache',
+      headcomment: pkg.name + " v" + pkg.version
     })
   ]
 })
