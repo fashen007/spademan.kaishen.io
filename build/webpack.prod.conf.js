@@ -6,7 +6,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var ManifestPlugin = require('webpack-manifest-plugin');
+// var ManifestPlugin = require('webpack-manifest-plugin');
 // var pkg = require('../package');
 var env = config.build.env
 
