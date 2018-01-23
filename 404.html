@@ -30,8 +30,9 @@
       var l = window.location;
       var redirecturl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname
       console.log('l.pathname', l.pathname)
-         console.log('l.hash', l.hash)
+      console.log('l.hash', l.hash)
       console.log('redirecturl', redirecturl)
+      alert(111)
       l.replace(redirecturl);
     </script>
 </body>
