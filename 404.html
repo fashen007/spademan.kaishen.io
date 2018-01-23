@@ -30,9 +30,7 @@
       var l = window.location;
       console.log('l.pathname', l.pathname)
       l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' +
         l.hash
       );
     </script>
