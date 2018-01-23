@@ -28,9 +28,9 @@
       // Otherwise, leave segmentCount as 0.
       var segmentCount = 0;
       var l = window.location;
-      var redirecturl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' +
-        l.hash
+      var redirecturl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname
       console.log('l.pathname', l.pathname)
+         console.log('l.hash', l.hash)
       console.log('redirecturl', redirecturl)
       l.replace(redirecturl);
     </script>
